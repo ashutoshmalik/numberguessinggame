@@ -34,6 +34,48 @@ This implementation has an HTML page, which helps the player to submit his/her g
 ![Game GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/gaemInit.png)
 
 
+### Ajax POST call to submit user guess
+
+```
+let http = new XMLHttpRequest();
+let url = 'http://localhost:3000/checkGuess';    
+let data = {};
+data.randomNumber = randomNumber;
+data.userGuess = guessField.value;
+data.guessCount = guessCount;
+
+http.open('POST', url, true);        
+//Send the proper header information along with the request
+http.setRequestHeader('Content-type','application/json');
+http.send(JSON.stringify(data));   
+```
+
+### Ajax POST request handling
+```
+var randomNumber = Number(request.body.randomNumber);
+var userGuess = Number(request.body.userGuess);
+var guessCount = Number(request.body.guessCount);        
+
+var lowOrHi = '';
+var result = '';
+var type = 0;   
+if(userGuess === randomNumber) {
+    result = 'Congratulations! You got it right!';     
+} else if(guessCount === 10) {
+    result = 'GameOver!';
+    type = -1;
+} else {
+    result = 'Wrong!';
+    type = 1;
+    if(userGuess < randomNumber) {
+        lowOrHi = 'Last guess was too low!';
+    } else if(userGuess > randomNumber) {
+        lowOrHi = 'Last guess was too high!';
+    }
+}
+
+```
+
 In response, API calculates the user guess against the actual number and send back the result in JSON format.
 
 ```
@@ -49,3 +91,7 @@ Description of the API response:
 "error": Reason of the  result
 "type": Represent the what next action user can perform.
 ```
+
+After receiving the response from API, ajax callback function parse the response and update the user if the guess correct or user needs to try again if possible.
+
+![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/gaem.png)
