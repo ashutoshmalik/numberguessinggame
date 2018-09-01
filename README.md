@@ -3,6 +3,12 @@
 Its an implementation of simple number guessing game. It should choose a random number between 1 and 100, then challenge the player to guess the number in 10 turns. After each turn, the player should be told if they are right or wrong — and, if they are wrong, whether the guess was too low or too high. It should also tell the player what numbers they previously guessed. The game will end once the player guesses correctly, or once they run out of turns. When the game ends, the player should be given an option to start playing again.
 
 
+### Application directory structure
+
+This structure contains 
+
+![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/structure.PNG)
+
 ### Task list
 ```
 
@@ -95,3 +101,7 @@ Description of the API response:
 After receiving the response from API, ajax callback function parse the response and update the user if the guess correct or user needs to try again if possible.
 
 ![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
+
+
+
+
