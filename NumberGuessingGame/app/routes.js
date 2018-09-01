@@ -32,6 +32,7 @@ module.exports = (app) => {
                 lowOrHi = 'Last guess was too high!';
             }
         }
+        
         response.json(
             {
                 "result":result,
