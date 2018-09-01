@@ -94,4 +94,4 @@ Description of the API response:
 
 After receiving the response from API, ajax callback function parse the response and update the user if the guess correct or user needs to try again if possible.
 
-![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/gaem.png)
+![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
