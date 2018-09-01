@@ -32,3 +32,15 @@ Its an implementation of simple number guessing game. It should choose a random 
 This implementation has an HTML page, which helps the player to submit his/her guess to RESTful API. 
 ```
 ![Game GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
+```
+
+In response, API calculates the user guess against the actual number and send back the result in JSON format.
+
+```
+{
+        result: "Wrong!", 
+        error: "Last guess was too low!", 
+        type: 1
+}
+
+```
