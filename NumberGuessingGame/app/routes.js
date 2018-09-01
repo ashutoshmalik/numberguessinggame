@@ -1,7 +1,13 @@
 module.exports = (app) => {
   
     app.get('/', (request, response) => {
-        response.json({"message": "Let's play the game."});
+        response.json(
+            {
+                "result":"Number Guessing Game",
+                "error":"This API supports only POST request(s)",                    
+                "type":0
+            }                        
+        );    
     });
     
     app.post('/checkGuess', (request, response) => {        
