@@ -43,4 +43,9 @@ In response, API calculates the user guess against the actual number and send ba
         type: 1
 }
 
+Description of the API response:
+
+"result": Final result of the API call based on the submitted parameters
+"error": Reason of the  result
+"type": Represent the what next action user can perform.
 ```
