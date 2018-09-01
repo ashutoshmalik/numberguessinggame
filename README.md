@@ -31,4 +31,4 @@ Its an implementation of simple number guessing game. It should choose a random 
 
 This implementation has an HTML page, which helps the player to submit his/her guess to RESTful API. 
 ```
-
+![alt text](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
