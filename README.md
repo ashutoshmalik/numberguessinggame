@@ -5,7 +5,9 @@ Its an implementation of simple number guessing game. It should choose a random 
 
 ### Application directory structure
 
-This structure contains 
+This structure contains two implementations of the same problem. First, without using Node.js API and Second, with Node.js API.
+- "public0" folder contains first implementation.
+- "public" folder used for the second.
 
 ![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/structure.PNG)
 
