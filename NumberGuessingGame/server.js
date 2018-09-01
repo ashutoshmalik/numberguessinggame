@@ -35,7 +35,7 @@ app.use((request, response, next) => {
 
 require('./app/routes.js')(app);
 
-// listen for requests
+// listen for requests 
 var listener = app.listen(3000, () => {
     console.log("Game server is listening on "+ os.hostname() + ":" + listener.address().port);
 });
