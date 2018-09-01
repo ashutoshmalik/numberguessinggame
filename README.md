@@ -30,9 +30,9 @@ Its an implementation of simple number guessing game. It should choose a random 
 ### Implementation
 
 This implementation has an HTML page, which helps the player to submit his/her guess to RESTful API. 
-```
-![Game GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
-```
+
+![Game GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/gaemInit.png)
+
 
 In response, API calculates the user guess against the actual number and send back the result in JSON format.
 
