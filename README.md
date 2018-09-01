@@ -26,3 +26,9 @@ Its an implementation of simple number guessing game. It should choose a random 
 9.Once the game restarts, make sure the game logic and UI are completely reset, then go back to step 1.
 
 ```
+
+### Implementation
+
+This implementation has an HTML page, which helps the player to submit his/her guess to RESTful API. 
+```
+
