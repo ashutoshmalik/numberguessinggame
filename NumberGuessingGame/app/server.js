@@ -33,7 +33,7 @@ app.use((request, response, next) => {
     next();
 });
 
-require('./app/routes.js')(app);
+require('./routes.js')(app);
 
 // listen for requests 
 var listener = app.listen(3000, () => {
