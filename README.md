@@ -6,10 +6,17 @@ Its an implementation of simple number guessing game. It should choose a random 
 ### Application directory structure
 
 This structure contains two implementations of the same problem. First, without using Node.js API and Second, with Node.js API.
+- "app" folder contains REST API implementation using Node.js
 - "public0" folder contains first implementation.
 - "public" folder used for the second.
 
 ![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/structure.PNG)
+
+### How to run
+
+This application is developed using NetBeans IDE. Its using port 8383 for the application by default. We have to run Node.js API server from its base folder "app". This API available on port 3000.
+
+![API CONSOLE](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/api_console.PNG)
 
 ### Task list
 ```
