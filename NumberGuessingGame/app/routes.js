@@ -11,13 +11,13 @@ module.exports = (app) => {
     });
     
     app.post('/checkGuess', (request, response) => {        
-        var randomNumber = Number(request.body.randomNumber);
-        var userGuess = Number(request.body.userGuess);
-        var guessCount = Number(request.body.guessCount);        
+        let randomNumber = Number(request.body.randomNumber);
+        let userGuess = Number(request.body.userGuess);
+        let guessCount = Number(request.body.guessCount);        
         
-        var lowOrHi = '';
-        var result = '';
-        var type = 0;   
+        let lowOrHi = '';
+        let result = '';
+        let type = 0;   
         if(userGuess === randomNumber) {
             result = 'Congratulations! You got it right!';     
         } else if(guessCount === 10) {
