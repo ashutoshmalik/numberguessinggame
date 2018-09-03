@@ -109,7 +109,17 @@ Description of the API response:
 
 After receiving the response from API, ajax callback function parse the response and update the user if the guess correct or user needs to try again if possible.
 
-![Updated GUI](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
+![Wrong Guess](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game.PNG)
+
+OR
+
+![SUCCESS](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/game_success.PNG)
+
+If API is not responding, then following message will be displayed.
+
+![API not working](https://github.com/ashutoshmalik/numberguessinggame/blob/master/NumberGuessingGame/public/images/api_notresponding.PNG)
+
+
 
 
 
