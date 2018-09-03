@@ -49,6 +49,9 @@ function checkGuess() {
             guessCount++;
             guessField.value = '';
             guessField.focus();
+        } else {
+            lastResult.textContent = 'API server is not responding!!!';
+            lastResult.style.backgroundColor = 'blue';            
         }
     };   
 }
